@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Cloud outline with a medical cross, representing a cloud-hosted hospital rebuild">
+  <rect width="120" height="120" fill="#E4E4DC"/>
+  <path d="M40 78 C28 78 20 70 20 60 C20 51 27 44 36 43 C38 32 48 24 60 24 C72 24 82 32 84 43 C93 44 100 51 100 61 C100 71 92 78 82 78 Z"
+        fill="none" stroke="#33547A" stroke-width="3.5" stroke-linejoin="round"/>
+  <path d="M60 52 V78 M47 65 H73" stroke="#B0392E" stroke-width="5" stroke-linecap="round"/>
+</svg>

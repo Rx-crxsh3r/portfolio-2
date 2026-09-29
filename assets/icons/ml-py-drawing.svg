@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="A hand-drawn line curving across the frame, representing a drawing classifier">
+  <rect width="120" height="120" fill="#E4E4DC"/>
+  <path d="M22 82 C36 40 50 96 64 60 C74 34 84 70 98 40"
+        fill="none" stroke="#33547A" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="98" cy="40" r="4.5" fill="#B0392E"/>
+</svg>

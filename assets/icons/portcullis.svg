@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Shield outline with a checkmark, representing a security auditor">
+  <rect width="120" height="120" fill="#E4E4DC"/>
+  <path d="M60 24 L88 34 V60 C88 80 76 94 60 100 C44 94 32 80 32 60 V34 Z"
+        fill="none" stroke="#33547A" stroke-width="3.5" stroke-linejoin="round"/>
+  <path d="M46 60 L56 70 L76 48" fill="none" stroke="#B0392E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

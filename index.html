@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ahmed Baflah — Field Journal</title>
+<meta name="description" content="Portfolio of Ahmed Baflah, Software Engineering graduate. Projects, experience, and field notes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#field-kit">Skip intro</a>
+
+<header class="site-nav">
+  <a href="#top" class="site-nav__name">Ahmed Baflah</a>
+  <nav class="site-nav__links" aria-label="Section navigation">
+    <a href="#field-kit">Field Kit</a>
+    <a href="#field-notes">Field Notes</a>
+    <a href="#log-book">Log Book</a>
+    <a href="#back-cover">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- ============ FRONT COVER ============ -->
+  <section class="intro" id="intro" aria-label="Introduction">
+    <div class="intro__spacer">
+      <div class="intro__pin">
+
+        <div class="intro__panel intro__panel--left">
+          <p class="stamp">Front Cover</p>
+          <h1 class="intro__name">Ahmed&nbsp;Baflah</h1>
+          <p class="intro__role">Software&nbsp;Engineering graduate</p>
+        </div>
+
+        <div class="intro__panel intro__panel--right">
+          <p class="intro__bio">
+            I'm a recent software engineering grad who likes building
+            small, sharp tools: a security auditor, an algorithm
+            visualizer, a keyboard-lock utility I threw together at
+            2am because I actually needed one. I'm just a curious
+            person in general, lately that's had me teaching myself
+            mechatronics at home with an ESP32, slowly working out
+            what voltage even is.
+          </p>
+          <p class="intro__bio intro__bio--note">
+            Currently reading up on data-intensive application design
+            and Kubernetes optimization.
+          </p>
+          <p class="intro__scroll-cue">Scroll to open the notebook ↓</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FIELD KIT ============ -->
+  <section class="section" id="field-kit" aria-label="Skills">
+    <p class="stamp">Field Kit</p>
+    <h2 class="section-heading">What's in the toolbox</h2>
+
+    <div class="kit-grid">
+
+      <div class="paper-card kit-card">
+        <span class="pin" aria-hidden="true"></span>
+        <h3 class="kit-card__title">Languages</h3>
+        <p class="kit-card__list">Java, Python, C#, C++, JavaScript, TypeScript, SQL, R, Dart, Rust, Go</p>
+      </div>
+
+      <div class="paper-card kit-card">
+        <span class="pin" aria-hidden="true"></span>
+        <h3 class="kit-card__title">Frameworks &amp; Libraries</h3>
+        <p class="kit-card__list">React, Flutter, Django, Express, Vite</p>
+      </div>
+
+      <div class="paper-card kit-card">
+        <span class="pin" aria-hidden="true"></span>
+        <h3 class="kit-card__title">Cloud &amp; DevOps</h3>
+        <p class="kit-card__list">AWS EC2, AWS S3, AWS Lambda, AWS X-Ray, IAM, SQS, SNS, Cloudflare, Kubernetes, Docker, GitHub Actions, Firebase, Redis</p>
+      </div>
+
+      <div class="paper-card kit-card">
+        <span class="pin" aria-hidden="true"></span>
+        <h3 class="kit-card__title">Dev Tools &amp; IDEs</h3>
+        <p class="kit-card__list">Git, GitHub, Android Studio, VS Code, Visual Studio, NetBeans</p>
+      </div>
+
+      <div class="paper-card kit-card">
+        <span class="pin" aria-hidden="true"></span>
+        <h3 class="kit-card__title">Data &amp; Design</h3>
+        <p class="kit-card__list">R (data analysis), Power BI, Blender, Unity</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ FIELD NOTES ============ -->
+  <section class="section field-notes" id="field-notes" aria-label="Projects">
+    <p class="stamp">Field Notes</p>
+    <h2 class="section-heading">Projects</h2>
+    <p class="field-notes__disclaimer">Team-built projects are shown here to represent my individual contribution and aren't claimed as solo work.</p>
+
+    <div class="project-stack">
+
+      <!-- 1. Portcullis -->
+      <article class="project-card" data-slug="portcullis" style="top: 8vh;">
+        <span class="pin" aria-hidden="true"></span>
+        <div class="project-card__inner">
+          <div class="project-card__preview" data-preview data-media="video" data-src="assets/videos/portcullis.mp4">
+            <img class="project-card__icon" src="assets/icons/portcullis.svg" alt="" loading="lazy">
+            <video class="project-card__video" muted loop playsinline preload="none" aria-hidden="true"></video>
+            <span class="preview-hint" aria-hidden="true">
+              <span class="preview-hint__hover">Hover to preview</span>
+              <span class="preview-hint__tap">Tap to preview</span>
+            </span>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__meta">
+              <span class="tag">TypeScript</span>
+              <span class="tag">Personal · Cybersecurity</span>
+              <span class="tag tag--status">Done</span>
+            </div>
+            <h3 class="project-card__title">Portcullis</h3>
+            <p class="project-card__desc">A web security auditor — give it a URL, and it audits what's externally visible about the site's security posture: HTTP headers, TLS/certificate config, DNS-based email-spoofing protection (SPF/DKIM/DMARC), cookie flags, exposed sensitive files, and <code>security.txt</code>. Returns a letter grade with a full per-category breakdown, and tracks repeat scans of the same domain over time.</p>
+            <p class="project-card__desc">Built out of a personal interest in cybersecurity — to understand how tools like SecurityHeaders.com and the old Mozilla Observatory actually reason about "is this secure," and to get hands-on with defensive engineering that's easier to read about than to build correctly (SSRF protection, k-anonymity, DNS-rebinding resistance). Structured as three isolated pieces: a framework-agnostic <code>/core</code> that does pure audit logic, a thin Express <code>/server</code> that owns SSRF protection, rate limiting, caching and scan history, and a React/TypeScript <code>/client</code> that only talks to the server.</p>
+            <div class="project-card__links">
+              <a href="https://github.com/Rx-crxsh3r/Portcullis" class="outbound-link" data-outbound data-dest-label="GitHub">View source</a>
+              <span class="project-card__note">No live demo — running it needs both frontend and backend hosted, which gets costly to keep up permanently.</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2. Algorithm-Visualizer -->
+      <article class="project-card" data-slug="algorithm-visualizer" style="top: 12vh;">
+        <span class="pin" aria-hidden="true"></span>
+        <div class="project-card__inner">
+          <div class="project-card__preview" data-preview data-media="video" data-src="assets/videos/algorithm-visualizer.mp4">
+            <img class="project-card__icon" src="assets/icons/algorithm-visualizer.svg" alt="" loading="lazy">
+            <video class="project-card__video" muted loop playsinline preload="none" aria-hidden="true"></video>
+            <span class="preview-hint" aria-hidden="true">
+              <span class="preview-hint__hover">Hover to preview</span>
+              <span class="preview-hint__tap">Tap to preview</span>
+            </span>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__meta">
+              <span class="tag">TypeScript / React</span>
+              <span class="tag">Personal · Learning</span>
+              <span class="tag tag--status">Done</span>
+            </div>
+            <h3 class="project-card__title">Algorithm-Visualizer</h3>
+            <p class="project-card__desc">An interactive visualizer for pathfinding (BFS, Dijkstra, A*, DFS) and sorting (bubble, insertion, merge, quick) on one shared architecture instead of two separate tools. Every algorithm is scrubbable, speed-controllable, and can be raced side-by-side against another algorithm on identical input, next to a pseudocode panel that highlights the current line as it runs.</p>
+            <p class="project-card__desc">Built to actually understand these algorithms for a college algorithms class, rather than memorize pseudocode the night before an exam — and it ended up helping a few classmates grasp the concepts more concretely, too. The core idea: every algorithm is a generator function that yields a plain "step" object whenever something meaningful happens (a node visited, an edge relaxed, a comparison, a swap) and never touches the DOM directly — which is what makes play/pause/scrub, speed control, and race mode all fall out of one ~50-line shared player instead of duplicated per-algorithm logic.</p>
+            <div class="project-card__links">
+              <a href="https://github.com/Rx-crxsh3r/Algorithm-Visualizer" class="outbound-link" data-outbound data-dest-label="GitHub">View source</a>
+              <a href="https://algorithm-visualizer.ahmed-ab2824.workers.dev/" class="outbound-link" data-outbound data-dest-label="the live demo">Live demo</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 3. Pantai Hospital Rework -->
+      <article class="project-card" data-slug="pantai-hospital-rework" style="top: 16vh;">
+        <span class="pin" aria-hidden="true"></span>
+        <div class="project-card__inner">
+          <div class="project-card__preview" data-preview data-media="video" data-src="assets/videos/pantai-hospital-rework.mp4">
+            <img class="project-card__icon" src="assets/icons/pantai-hospital-rework.svg" alt="" loading="lazy">
+            <video class="project-card__video" muted loop playsinline preload="none" aria-hidden="true"></video>
+            <span class="preview-hint" aria-hidden="true">
+              <span class="preview-hint__hover">Hover to preview</span>
+              <span class="preview-hint__tap">Tap to preview</span>
+            </span>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__meta">
+              <span class="tag">.NET Core / AWS</span>
+              <span class="tag">Team project</span>
+              <span class="tag tag--status">Done</span>
+            </div>
+            <h3 class="project-card__title">Pantai Hospital Rework</h3>
+            <p class="project-card__desc">A last-semester college assignment: recreating an existing hospital's website with a modern backend, running fully on AWS — EC2, .NET Core, Lambda, Cloudflare, X-Ray, IAM, S3, SQS, and SNS, among other services. Included working through real infrastructure constraints along the way, like solving an under-provisioned EC2 instance's memory limits by configuring swap. Built with a team.</p>
+            <div class="project-card__links">
+              <a href="https://github.com/evanfx/frontend-production" class="outbound-link" data-outbound data-dest-label="GitHub">View source</a>
+              <a href="https://frontend-production-iota.vercel.app/login" class="outbound-link" data-outbound data-dest-label="the live demo">Live demo</a>
+              <span class="project-card__note">Backend kept private; built with a team.</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 4. POTS-College -->
+      <article class="project-card" data-slug="pots-college" style="top: 20vh;">
+        <span class="pin" aria-hidden="true"></span>
+        <div class="project-card__inner">
+          <div class="project-card__preview" data-preview data-media="gif" data-src="assets/videos/pots-college.gif">
+            <img class="project-card__icon" src="assets/icons/pots-college.svg" alt="" loading="lazy">
+            <img class="project-card__gif" alt="" loading="lazy">
+            <span class="preview-hint" aria-hidden="true">
+              <span class="preview-hint__hover">Hover to preview</span>
+              <span class="preview-hint__tap">Tap to preview</span>
+            </span>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__meta">
+              <span class="tag">Java</span>
+              <span class="tag">Team project</span>
+              <span class="tag tag--status">Done</span>
+            </div>
+            <h3 class="project-card__title">POTS-College</h3>
+            <p class="project-card__desc">Procurement Order Tracking System (POTS) — a second-year college assignment built with a team. Led development of the Inventory Manager module: full-lifecycle item and supplier management with real-time stock monitoring and low-stock alerts. Earned a top grade.</p>
+            <div class="project-card__links">
+              <a href="https://github.com/Rx-crxsh3r/POTS-College" class="outbound-link" data-outbound data-dest-label="GitHub">View source</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 5. LibriUni -->
+      <article class="project-card" data-slug="libriuni" style="top: 24vh;">
+        <span class="pin" aria-hidden="true"></span>
+        <div class="project-card__inner">
+          <div class="project-card__preview" data-preview data-media="video" data-src="assets/videos/libriuni.mp4">
+            <img class="project-card__icon" src="assets/icons/libriuni.svg" alt="" loading="lazy">
+            <video class="project-card__video" muted loop playsinline preload="none" aria-hidden="true"></video>
+            <span class="preview-hint" aria-hidden="true">
+              <span class="preview-hint__hover">Hover to preview</span>
+              <span class="preview-hint__tap">Tap to preview</span>
+            </span>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__meta">
+              <span class="tag">Dart / Flutter</span>
+              <span class="tag">Team project</span>
+              <span class="tag tag--status">Done</span>
+            </div>
+            <h3 class="project-card__title">LibriUni</h3>
+            <p class="project-card__desc">A mobile application built with a team for a college assignment — earned a top grade.</p>
+            <div class="project-card__links">
+              <a href="https://github.com/Abdull0h3/LibriUni-Mobile-Application--College" class="outbound-link" data-outbound data-dest-label="GitHub">View source</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 6. ML-PY-Drawing -->
+      <article class="project-card" data-slug="ml-py-drawing" style="top: 28vh;">
+        <span class="pin" aria-hidden="true"></span>
+        <div class="project-card__inner">
+          <div class="project-card__preview" data-preview data-media="gif" data-src="assets/videos/ml-py-drawing.gif">
+            <img class="project-card__icon" src="assets/icons/ml-py-drawing.svg" alt="" loading="lazy">
+            <img class="project-card__gif" alt="" loading="lazy">
+            <span class="preview-hint" aria-hidden="true">
+              <span class="preview-hint__hover">Hover to preview</span>
+              <span class="preview-hint__tap">Tap to preview</span>
+            </span>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__meta">
+              <span class="tag">Python</span>
+              <span class="tag">Personal · Learning</span>
+              <span class="tag tag--status">Done</span>
+            </div>
+            <h3 class="project-card__title">ML-PY-Drawing</h3>
+            <p class="project-card__desc">One of the first projects combining machine learning with a drawing application — the idea came out of a workshop, so full credit isn't claimed for the concept, but the build was a genuinely fun way to get hands-on with ML. A real-time classifier comparing five models (Linear SVM, KNN, Logistic Regression, Decision Tree, Gaussian Naive Bayes) over a custom pipeline that converts hand-drawn input into 50×50 grayscale feature vectors, with live prediction through a Tkinter/OpenCV GUI. Supports custom class training, model persistence, and automated dataset organization.</p>
+            <div class="project-card__links">
+              <a href="https://github.com/Rx-crxsh3r/ML-PY-drawing" class="outbound-link" data-outbound data-dest-label="GitHub">View source</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 7. Api-Stresstester -->
+      <article class="project-card" data-slug="api-stresstester" style="top: 32vh;">
+        <span class="pin" aria-hidden="true"></span>
+        <div class="project-card__inner">
+          <div class="project-card__preview" data-preview data-media="video" data-src="assets/videos/api-stresstester.mp4">
+            <img class="project-card__icon" src="assets/icons/api-stresstester.svg" alt="" loading="lazy">
+            <video class="project-card__video" muted loop playsinline preload="none" aria-hidden="true"></video>
+            <span class="preview-hint" aria-hidden="true">
+              <span class="preview-hint__hover">Hover to preview</span>
+              <span class="preview-hint__tap">Tap to preview</span>
+            </span>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__meta">
+              <span class="tag">Go</span>
+              <span class="tag">Personal · Experiment</span>
+              <span class="tag tag--status">Done</span>
+            </div>
+            <h3 class="project-card__title">Api-Stresstester</h3>
+            <p class="project-card__desc">A command-line tool built over a couple of days while experimenting with Go and its speed — used for load and stress testing APIs.</p>
+            <div class="project-card__links">
+              <a href="https://github.com/Rx-crxsh3r/Api-Stresstester" class="outbound-link" data-outbound data-dest-label="GitHub">View source</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 8. UtilityApp -->
+      <article class="project-card" data-slug="utilityapp" style="top: 36vh;">
+        <span class="pin" aria-hidden="true"></span>
+        <div class="project-card__inner">
+          <div class="project-card__preview" data-preview data-media="none">
+            <img class="project-card__icon" src="assets/icons/utilityapp.svg" alt="" loading="lazy">
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__meta">
+              <span class="tag">C++</span>
+              <span class="tag">Personal tool</span>
+              <span class="tag tag--status">Done</span>
+            </div>
+            <h3 class="project-card__title">UtilityApp</h3>
+            <p class="project-card__desc">Built out of a practical need — a way to lock the keyboard and mouse when stepping away from an open laptop.</p>
+            <div class="project-card__links">
+              <a href="https://github.com/Rx-crxsh3r/UtilityApp" class="outbound-link" data-outbound data-dest-label="GitHub">View source</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 9. Cafe-Design -->
+      <article class="project-card project-card--in-progress" data-slug="cafe-design" style="top: 40vh;">
+        <span class="pin" aria-hidden="true"></span>
+        <div class="project-card__inner">
+          <div class="project-card__preview" data-preview data-media="video" data-src="assets/videos/cafe-design.mp4">
+            <img class="project-card__icon" src="assets/icons/cafe-design.svg" alt="" loading="lazy">
+            <video class="project-card__video" muted loop playsinline preload="none" aria-hidden="true"></video>
+            <span class="preview-hint" aria-hidden="true">
+              <span class="preview-hint__hover">Hover to preview</span>
+              <span class="preview-hint__tap">Tap to preview</span>
+            </span>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__meta">
+              <span class="tag">AI-assisted design</span>
+              <span class="tag tag--progress">In progress / concept</span>
+            </div>
+            <h3 class="project-card__title">Cafe-Design</h3>
+            <p class="project-card__desc">An AI-assisted café website design concept, still in progress.</p>
+            <div class="project-card__links">
+              <a href="https://github.com/Rx-crxsh3r/Cafe-Design" class="outbound-link" data-outbound data-dest-label="GitHub">View source</a>
+              <a href="https://cafe-design.ahmed-ab2824.workers.dev" class="outbound-link" data-outbound data-dest-label="the live demo">Live demo</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ LOG BOOK ============ -->
+  <section class="section" id="log-book" aria-label="Experience and education">
+    <p class="stamp">Log Book</p>
+    <h2 class="section-heading">Experience &amp; education</h2>
+
+    <div class="log-list">
+
+      <article class="log-entry">
+        <div class="log-entry__tab">Aug 2025 – Present</div>
+        <div class="log-entry__body">
+          <h3 class="log-entry__title">MediaGo <span class="log-entry__role">— Frontend Designer &amp; Researcher</span></h3>
+          <p class="log-entry__meta">Part-time / Volunteer · Remote</p>
+          <p class="log-entry__desc">MediaGo is Saudi Arabia's first licensed mobile Digital Out-of-Home (DOOH) advertising platform — smart digital screens installed on moving vehicles across cities like Jeddah, letting brands run location-targeted campaigns. Contributing part-time as a frontend designer and researcher, working alongside an eight-person dev team on UI/UX for the platform's internal tools.</p>
+        </div>
+      </article>
+
+      <article class="log-entry">
+        <div class="log-entry__tab">Aug 2025 – Dec 2025</div>
+        <div class="log-entry__body">
+          <h3 class="log-entry__title">NAMA Foundation <span class="log-entry__role">— Intern, Cloud &amp; Backend Developer</span></h3>
+          <p class="log-entry__meta">Kuala Lumpur, Malaysia</p>
+          <p class="log-entry__desc">NAMA Foundation is an international non-profit that funds sustainable development programs, focused on education, institutional building, and human capital development — empowering youth, civil society organizations, and educational institutions. Built a multi-event mobile app with a synchronized web dashboard for non-technical staff to manage live event data, cut per-event costs by over 90% through serverless architecture and tokenization, reduced server overhead by 85% with Redis caching, and set up an automated, self-healing deployment pipeline on a separate Django backend.</p>
+        </div>
+      </article>
+
+      <article class="log-entry">
+        <div class="log-entry__tab">2023 – 2026</div>
+        <div class="log-entry__body">
+          <h3 class="log-entry__title">Education <span class="log-entry__role">— B.Sc (Hons) Software Engineering</span></h3>
+          <p class="log-entry__meta">Asia Pacific University (APU), Selangor, Malaysia</p>
+          <p class="log-entry__desc">Graduated with a GPA of 3.38/4.0 (last recorded figure — may reflect final-semester adjustments).</p>
+        </div>
+      </article>
+
+      <article class="log-entry">
+        <div class="log-entry__tab">2024</div>
+        <div class="log-entry__body">
+          <h3 class="log-entry__title">Hackathons</h3>
+          <p class="log-entry__desc">APU ALPHATHON 2024 and Joget Next Gen Hack 2024 — collaborative, time-boxed team builds.</p>
+        </div>
+      </article>
+
+      <article class="log-entry">
+        <div class="log-entry__tab">05/2022 – 09/2022</div>
+        <div class="log-entry__body">
+          <h3 class="log-entry__title">Automotive E-commerce Platform, Jeddah <span class="log-entry__role">— Volunteer</span></h3>
+          <p class="log-entry__desc">Reviewed UI/backend usability and helped keep product and supplier data accurate for an e-commerce storefront.</p>
+        </div>
+      </article>
+
+    </div>
+
+    <p class="log-book__note">A few other things I built during this time aren't listed here — they're covered by an NDA.</p>
+  </section>
+
+</main>
+
+<!-- ============ BACK COVER ============ -->
+<footer class="section back-cover" id="back-cover" aria-label="Contact">
+  <p class="stamp">Back Cover</p>
+  <h2 class="section-heading">Get in touch</h2>
+
+  <a class="cv-download" href="assets/cv/Ahmed_Baflah_CV.pdf" download>Download CV ↓</a>
+
+  <div class="back-cover__contacts">
+    <a href="mailto:ahmed.ab2824@gmail.com" class="back-cover__link">ahmed.ab2824@gmail.com</a>
+    <a href="https://www.linkedin.com/in/ahmed-baflah/" class="back-cover__link outbound-link" data-outbound data-dest-label="LinkedIn">LinkedIn</a>
+    <a href="https://github.com/Rx-crxsh3r" class="back-cover__link outbound-link" data-outbound data-dest-label="GitHub">GitHub</a>
+  </div>
+
+  <p class="back-cover__copyright">© 2026 Ahmed Baflah. All rights reserved.</p>
+</footer>
+
+<div class="modal-overlay" id="outbound-modal" hidden>
+  <div class="modal-card paper-card"
+       role="dialog"
+       aria-modal="true"
+       aria-labelledby="outbound-modal-label"
+       aria-describedby="outbound-modal-desc"
+       tabindex="-1">
+    <span class="pin" aria-hidden="true"></span>
+    <p class="stamp" id="outbound-modal-label">Leaving the notebook</p>
+    <p class="modal-card__desc" id="outbound-modal-desc">
+      You're about to leave this site to view this on <span id="outbound-modal-dest">GitHub</span>. Continue?
+    </p>
+    <div class="modal-card__actions">
+      <button type="button" class="modal-btn modal-btn--cancel" id="outbound-modal-cancel">Cancel</button>
+      <button type="button" class="modal-btn modal-btn--continue" id="outbound-modal-continue">Continue</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>

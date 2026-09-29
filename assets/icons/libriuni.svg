@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Phone outline with a scrolling list, representing a mobile library app">
+  <rect width="120" height="120" fill="#E4E4DC"/>
+  <rect x="38" y="18" width="44" height="84" rx="6" fill="none" stroke="#33547A" stroke-width="3.5"/>
+  <line x1="46" y1="38" x2="74" y2="38" stroke="#1C231E" stroke-width="3" opacity="0.55"/>
+  <line x1="46" y1="52" x2="74" y2="52" stroke="#1C231E" stroke-width="3" opacity="0.55"/>
+  <line x1="46" y1="66" x2="66" y2="66" stroke="#B0392E" stroke-width="3"/>
+  <line x1="46" y1="80" x2="70" y2="80" stroke="#1C231E" stroke-width="3" opacity="0.55"/>
+</svg>

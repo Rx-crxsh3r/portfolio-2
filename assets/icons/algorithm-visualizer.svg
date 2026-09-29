@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Small node graph with one highlighted path, representing pathfinding">
+  <rect width="120" height="120" fill="#E4E4DC"/>
+  <line x1="32" y1="38" x2="60" y2="30" stroke="#1C231E" stroke-width="2.5" opacity="0.5"/>
+  <line x1="32" y1="38" x2="34" y2="78" stroke="#1C231E" stroke-width="2.5" opacity="0.5"/>
+  <line x1="34" y1="78" x2="70" y2="90" stroke="#1C231E" stroke-width="2.5" opacity="0.5"/>
+  <line x1="60" y1="30" x2="88" y2="46" stroke="#B0392E" stroke-width="3.5"/>
+  <line x1="88" y1="46" x2="70" y2="90" stroke="#B0392E" stroke-width="3.5"/>
+  <circle cx="32" cy="38" r="7" fill="#F8F6EF" stroke="#33547A" stroke-width="3"/>
+  <circle cx="60" cy="30" r="7" fill="#F8F6EF" stroke="#33547A" stroke-width="3"/>
+  <circle cx="88" cy="46" r="7" fill="#F8F6EF" stroke="#33547A" stroke-width="3"/>
+  <circle cx="34" cy="78" r="7" fill="#F8F6EF" stroke="#33547A" stroke-width="3"/>
+  <circle cx="70" cy="90" r="7" fill="#F8F6EF" stroke="#B0392E" stroke-width="3"/>
+</svg>

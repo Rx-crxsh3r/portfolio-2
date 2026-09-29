@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="A coffee cup with a wisp of steam, representing an in-progress cafe design concept">
+  <rect width="120" height="120" fill="#E4E4DC"/>
+  <path d="M36 54 H80 V78 C80 88 72 94 58 94 C44 94 36 88 36 78 Z"
+        fill="none" stroke="#33547A" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M80 58 C90 58 94 64 94 70 C94 76 90 80 80 80" fill="none" stroke="#33547A" stroke-width="2.5"/>
+  <path d="M50 46 C48 40 54 38 52 32" fill="none" stroke="#1C231E" stroke-width="2" opacity="0.45" stroke-linecap="round"/>
+  <path d="M62 46 C60 40 66 38 64 32" fill="none" stroke="#1C231E" stroke-width="2" opacity="0.45" stroke-linecap="round"/>
+</svg>
